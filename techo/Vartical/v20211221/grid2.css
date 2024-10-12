@@ -1,0 +1,60 @@
+
+.IItable{
+  margin:0mm 0mm;
+  padding:0;
+    height:195mm;
+    width:128mm;
+    
+  display:grid;
+  grid-template-columns: 32mm 32mm 32mm 32mm;
+  grid-template-rows: 15mm 180mm;
+  /* border:solid 1px;  */
+}
+
+.IIItabletop{
+  border-left:solid 1px;
+  border-top:solid 1px;
+  border-bottom:solid 1px;
+  text-align:left;
+}
+
+
+.IIItablemiddle{
+  border-left:solid 1px;
+}
+
+.hoursets{
+  display:grid;
+  grid-template-columns:4mm 28mm;
+  grid-template-rows: 2.5mm 8.5mm;
+}
+
+.hour{
+  grid-row:2/3;
+}
+
+
+.hourline{
+  grid-row:1/2;
+  grid-column:2/3;
+  display: block;
+  margin: 2mm 0 0 0;
+  border-top: 1px dashed black;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.quarterlines{
+  grid-column:2/3;
+}
+
+.quarterline{
+  margin: 2.6mm 0 2.6mm 0;
+  width:28mm;
+  border-top: 0.2px dotted rgba(0,0,0,0.2);
+  border-right: none;
+  border-bottom: none;
+  border-left: none;  
+}
+

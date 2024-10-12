@@ -1,0 +1,70 @@
+@media screen and (max-width:599px){
+  .header{
+    display: grid;
+
+  }
+
+  .nav{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+  }
+
+}
+
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------- */
+
+.navbar {
+  height: 50px;
+  padding: 0;
+}
+.navbar ul {
+  /* flexboxでナビゲーションバーを横並び配置する */
+  display: flex;
+  /* 縦幅中央に配置する指定 */
+  align-items: center;
+  /* 横幅中央に配置する指定 */
+  justify-content: center;
+  width: 100%;
+  /* リストスタイルを削除 */
+  list-style: none;
+}
+.navbar ul li {
+  /* ナビゲーションメニュー同士の間隔を指定 */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.nav-item a {
+  padding: 5px;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.nav-item {
+  /* アニメーション速度を指定 */
+  transition: 0.5s;
+  /* hover前後の回転角度の調整 */
+  transform: rotateX(0);
+}
+.nav-item:hover {
+  /* アニメーション速度を指定 */
+  transition: 0.3s;
+  /* hover前後の回転角度の調整 */
+  transform: rotateX(360deg);
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+
+
+  <title>ytbLabホーム</title>
+</head>
+
+  <style>
+    body{
+      margin: 0px;
+    }
+    .selector-for-some-widget {
+       box-sizing: content-box;
+    }
+    .b2{
+      margin: 2vw;
+    }
+
+    .d2{
+      margin: 1vw;
+      padding: 1vw;
+    }
+
+  </style>
+
+<body>
+
+
+  <nav
+  class="navbar 
+  navbar-expand-lg
+  navbar-light
+  bg-primary">
+
+    <div class="container-fluid">
+      <a 
+      class="navbar-brand" 
+      href="/Monooki/index.html">
+        <i class="fas fa-flask"></i>
+        ytbのLab
+      </a>
+
+      <!-- 三 -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNavLightDropdown"
+        aria-controls="navbarNavLightDropdown" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+
+      <div 
+      class="collapse navbar-collapse d2"
+      id="navbarNavLightDropdown"
+      style="background-color: rgba(154, 136, 233, 0.171);">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a 
+            class="nav-link active"
+            aria-current="page"
+            href="Monooki/">
+            Python
+            </a>
+          </li>
+
+
+          <!-- ドロップダウンメニュー -->
+          <li class="nav-item dropdown">
+            <button 
+            id="btnOpenMenu"
+            class="btn btn-success nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >
+            Monooki!
+            </button>
+            <div 
+            class="dropdown-menu"
+            aria-labelledby="btnOpenMenu">
+                <a
+                class="dropdown-item"
+                href="Monooki/Charendar.html">
+                カレンダー
+                </a>
+                <a
+                class="dropdown-item"
+                href="Monooki/openwin64">
+                オープンウィンドウ64
+                </a>  
+                <a
+                class="dropdown-item"
+                href="Monooki/Techou.html">
+                手帳
+                </a>
+                <a
+                class="dropdown-item"
+                href="Monooki/Gantchart/Gantchart.html">
+                ガントチャート
+                </a>
+            </div>
+
+          <!-- ドロップダウンメニュー -->
+          <li class="nav-item dropdown">
+            <button 
+            id="btnOpenMenu"
+            class="btn btn-success nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >
+            リンク集
+            </button>
+            <div 
+            class="dropdown-menu"
+            aria-labelledby="btnOpenMenu">
+                <a
+                class="dropdown-item"
+                href="Monooki/Charendar.html">
+                カレンダー
+                </a>
+                <a
+                class="dropdown-item"
+                href="Monooki/openwin64">
+                オープンウィンドウ64
+                </a>  
+                <a
+                class="dropdown-item"
+                href="Monooki/Techou.html">
+                手帳
+                </a>
+                <a
+                class="dropdown-item"
+                href="Monooki/Gantchart/Gantchart.html">
+                ガントチャート
+                </a>
+            </div>
+
+          
+        </ul>  
+    
+      </div>
+
+    </div>
+
+    <form class="d-flex">
+      <input 
+      class="form-control me-2"
+      type="search"
+      placeholder="Search"
+      aria-label="Search">
+      <button 
+      class="btn btn-outline-success" 
+      type="submit">
+      Search
+      </button>
+    </form>
+  </nav>
+  <!-- -------------------------------------------------------------------- -->
+
+
+
+  <div class="container">
+    <a href="/Monooki/Gantchart/Gantchart.php">印刷用</a>
+    <h3><a>&lt;</a>&nbsp;&nbsp;2018年 7月&nbsp;&nbsp;<a>&gt;</a></h3>
+    <table class="table table-bordered">
+      <tr>
+        <th>日</th>
+        <th>月</th>
+        <th>火</th>
+        <th>水</th>
+        <th>木</th>
+        <th>金</th>
+        <th>土</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td class="today">13</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+  <!-- bundle -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+  <!-- separate -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+

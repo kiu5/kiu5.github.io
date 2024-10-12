@@ -1,0 +1,89 @@
+
+.IIpagetitle{
+  flex-direction:column;
+  height:10vh;
+  width:80vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color:orange;
+}
+
+.IIpagetitle h2{
+  margin:0;
+  padding:1vw;
+}
+
+.ityped-cursor {
+  font-size: 1em;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+  color: #fff;
+ }
+ @keyframes blink {
+  100% {
+      opacity: 0;
+  }
+ }
+ @-webkit-keyframes blink {
+  100% {
+      opacity: 0;
+  }
+ }
+ @-moz-keyframes blink {
+  100% {
+      opacity: 0;
+  }
+ }
+
+ /* ------------------------------------------------------------------------- */
+.IInavbar{
+  /* flexboxで要素を真ん中に指定 */
+  justify-content: center;
+  align-items: center;
+}
+.IIInavlist ul {
+  display: flex;
+  flex-direction:row;
+  width: auto;
+  height:20%;
+}
+.IVbutton{
+  display: flex;
+  padding:2vw;
+  background:white;
+  width:auto;
+  float:left;
+  /* カーソルを離した際のアニメーションの速度調整 */
+  transition:.2s all;
+  /* 背景色を指定 */
+  background-color: #f1f1f1;
+}
+.IVbutton p {
+  height: 10px;
+  font-weight: 300;
+}
+.IVbutton a {
+  color:#333333;
+  /* リンク指定した要素のスタイルを削除 */
+  text-decoration:none;
+}
+
+.IInavbar:hover .IVbutton{
+  /* ナビゲーションをマウスオーバーした際の不透明度を指定 */
+  opacity:.5;
+}
+
+.IInavbar:hover .IVbutton:hover{
+  transition: .5s;
+  /* hover時の速度調整 */
+  opacity:1;
+  /* hoverした要素のみ不透明度を１に指定 */
+}
+.IInavbar:hover .IVbutton:hover > p {
+  /* hoverすると太字に変化 */
+  font-weight: bold;
+}

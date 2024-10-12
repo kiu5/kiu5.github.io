@@ -1,0 +1,102 @@
+/* 印刷時の用紙設定 */
+@page {
+  size: A5; /* 用紙サイズ */
+  margin: 0; /* ヘッダー・フッダーを無効化 */
+
+}
+
+/* 印刷時のみ */
+@media print{
+  .edit{
+    display:none;
+  }
+  .hide{
+    display:none;
+  }
+  .title{
+    margin: 0;
+    padding-top: 0mm;
+    padding-bottom: 0mm;
+    padding-left: 0mm;
+      font-size:2px
+  }
+
+  .sheet {
+    background-color: white; /* 背景を白く */
+    margin: 0;
+      /* 用紙サイズ A5 */
+    height: 208mm;
+    width: 148mm;
+    overflow: hidden;
+    position: relative; 
+    page-break-after: always;
+  }
+
+}
+
+
+@media screen {
+  body {
+    background-color:#dadce0;
+  }
+  .sheet {
+    background-color: white; /* 背景を白く */
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+    margin: 5mm auto;
+      /* 用紙サイズ A5 */
+    height: 208mm;
+    width: 148mm;
+    overflow: hidden;
+    position: relative; 
+    page-break-after: always;
+  }
+
+}
+
+.edit{
+  background-color: azure;
+  font-size: 30px;
+  text-align:center;
+}
+
+
+.yazi{
+  text-decoration:none;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.hour{
+  margin:auto;
+  padding:0mm;
+}
+
+.hour p{
+  margin:0;
+  font-size: 1px;
+
+}
+
+.char{
+  display:inline;
+  margin:0;
+}
+
+
+.sunday{
+color:red;
+}
+
+.saturday{
+  color:blue;
+}
+
+.d{
+  margin:0;
+  padding-left:1mm;
+  font-size:13px;
+}
+
+.w{
+  font-size:0.2px;
+}

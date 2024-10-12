@@ -1,0 +1,28 @@
+.Iodd{
+  margin: 0;
+  padding-top: 2mm;
+  padding-left: 5mm;
+
+}
+
+.even{
+  margin: 0 0 0 12mm;
+  padding-top:2mm;
+  /* margin-left:12mm; */
+  padding-right:2mm;
+}
+
+.title{
+  width:100mm;
+  margin: 0;
+  padding-top: 0mm;
+  padding-bottom: 0mm;
+  padding-left: 2mm;
+  font-size:10px
+}
+
+.title p{
+  margin:0;
+}
+
+

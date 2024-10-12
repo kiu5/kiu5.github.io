@@ -1,0 +1,28 @@
+
+.container{
+  z-index:0;
+    display:grid;
+    grid-template-rows:20vh 80vh;
+    grid-template-columns: 1vw 95vw 1vw;
+
+    background: orange ;/*保険用*/
+    background: -moz-linear-gradient(top, gold 0%, orange 100%);/*古いFireFox向け*/
+    background: -webkit-linear-gradient(top, gold 0%,orange 100%);/*古いSafariなど向け*/
+    filter:progid:DXImageTransform.Microsoft.Gradient(
+      startColorstr='gold',
+      endColorstr='orange',
+      GradientType=0 );/*IE9以下向け*/
+    background: linear-gradient(to bottom, gold 0%, orange 100%);/*正規の指定*/
+}
+
+
+
+.Iheader{
+  grid-column:2;
+}
+
+.Icontents{
+  grid-column:2;
+}
+
+

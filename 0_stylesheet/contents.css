@@ -1,0 +1,69 @@
+/* https://saruwakakun.com/html-css/reference/ribbon */
+
+.Grid{
+  display:grid;
+  grid-template-rows:20vh 20vh 20vh;
+  grid-template-columns:2vw 50vw;
+}
+
+.GI{
+  grid-column:2;
+}
+
+.GII{
+  grid-column:2;
+}
+
+.GIII{
+  grid-column:2;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+.IIcontent{
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 18px;
+  background: #acd879;
+  color: rgba(240,248,255,1);
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.IIcontent h3 {
+  margin: 0;
+  padding: 0 30px;
+  border-top: dashed 2px rgba(255, 255, 255, 0.5);
+  border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
+  line-height: 42px;
+}
+
+.IIcontent:before, .IIcontent:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.IIcontent:before {
+  top: -2px;
+  left: -2px;
+  border-width: 32px 0px 32px 15px;
+  border-color: transparent transparent transparent transparent;
+  border-style: solid;
+}
+
+.IIcontent:after {
+  top: -2px;
+  right: -2px;
+  border-width: 32px 15px 32px 0px;
+  border-color: transparent transparent transparent transparent;
+  border-style: solid;
+}
